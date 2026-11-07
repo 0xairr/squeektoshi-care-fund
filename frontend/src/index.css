@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+/* Squeektoshi's cage. Colours come from the hamster's world: aspen shavings for the floor, seed-hull
+   brown for ink, Squeekchain's yellow for his fur and the money, the wheel's blue, cheek pink, and
+   clover green for "all good". Bagel Fat One is the toy-box voice; Nunito does the reading. */
+@theme {
+  --color-paper: #fff6dc;
+  --color-card: #fffdf5;
+  --color-card2: #ffefc2;
+
+  --color-rule: #ecdcae;
+  --color-edge: #2b1d12;
+
+  --color-ink: #2b1d12;
+  --color-ink2: #5c4733;
+  --color-muted: #7d6750;
+
+  --color-sun: #ffc83d;
+  --color-amber: #9a5a00;
+  --color-wheel: #4b6bfb;
+  --color-cheek: #ff8fa3;
+  --color-leaf: #1f9d55;
+  --color-carrot: #c8520f;
+  --color-cherry: #c81e36;
+  --color-hover: #2f55e8;
+
+  --font-display: "Bagel Fat One", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --font-data: "Nunito", system-ui, sans-serif;
+  --font-voice: "Nunito", system-ui, sans-serif;
+
+  --shadow-pop: 4px 4px 0 0 #2b1d12;
+  --shadow-pop-sm: 2px 2px 0 0 #2b1d12;
+}
+
+@keyframes wheel-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes legs-a {
+  0%, 100% { transform: translateX(-7px); }
+  50% { transform: translateX(7px); }
+}
+
+@keyframes legs-b {
+  0%, 100% { transform: translateX(7px); }
+  50% { transform: translateX(-7px); }
+}
+
+@keyframes hop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes snore {
+  0%, 100% { opacity: 0.25; transform: translate(0, 0); }
+  50% { opacity: 1; transform: translate(6px, -8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before {
+    border-color: var(--color-rule);
+  }
+  /* keep room for the scrollbar from the first paint, so nothing shifts when the page grows */
+  html {
+    scrollbar-gutter: stable;
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-voice);
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-wheel);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

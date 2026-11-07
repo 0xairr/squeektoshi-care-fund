@@ -1,0 +1,37 @@
+{
+  "name": "squeektoshi-care-fund",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --outDir dist/client && vite build --ssr src/entry-server.tsx --outDir dist/server && node scripts/prerender.mjs",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "preview": "npm run build && node ../backend/server.js"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.94.5",
+    "@walletconnect/ethereum-provider": "^2.26.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "viem": "^2.57.16",
+    "wagmi": "^3.7.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@tailwindcss/vite": "4.2.2",
+    "@types/node": "22.19.15",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "4.7.0",
+    "eslint": "9.39.4",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.26",
+    "globals": "16.5.0",
+    "tailwindcss": "4.2.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.57.1",
+    "vite": "6.4.2"
+  }
+}

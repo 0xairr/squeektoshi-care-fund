@@ -1,0 +1,22 @@
+{
+  "name": "squeektoshi-care-fund-backend",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "4.22.1",
+    "viem": "^2.57.16"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@openzeppelin/merkle-tree": "^1.0.8",
+    "eslint": "9.39.4",
+    "globals": "16.5.0"
+  }
+}

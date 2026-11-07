@@ -1,0 +1,16 @@
+{
+  "airdrop": "0x0fC91d7436c4F402543d78f316EA05e929695205",
+  "airdropSnapshotBlock": 12082656,
+  "ballot": "0xDD71B58eD927f1BE5Fd1Ca8cD96757182db93a75",
+  "burner": "0x2D0709f2a53e7b96ce9F39C8FBe498d070513552",
+  "chainId": 11155111,
+  "deployBlock": 12082695,
+  "hook": "0x45c6179Ebd078B4283924c8A8A7Ed91E7a6CC0CC",
+  "keeper": "0x3a83a80B9249EcA85A9540Ec878bD968F13CB676",
+  "lpTokenId": 41503,
+  "poolFee": 0,
+  "rescue": "0x3a83a80B9249EcA85A9540Ec878bD968F13CB676",
+  "tickSpacing": 60,
+  "token": "0x5Eea836d4F39BD11b00EdA7f7004ad70C4b1732f",
+  "vault": "0x61Cdb9027610Ce7fFa8Fa0f6905dc9f9EFA8f8e8"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Squeektoshi Care Fund",
+  "ticker": "CARE",
+  "network": {
+    "name": "Sepolia",
+    "chainId": 11155111
+  },
+  "squeekchainApi": "https://api.squeekchain.com",
+  "squeekchainSite": "https://squeekchain.com",
+  "squeekchainDocs": "https://docs.squeekchain.com",
+  "explorer": "https://sepolia.etherscan.io",
+  "addresses": {
+    "token": "0x5Eea836d4F39BD11b00EdA7f7004ad70C4b1732f",
+    "vault": "0x61Cdb9027610Ce7fFa8Fa0f6905dc9f9EFA8f8e8",
+    "hook": "0x45c6179Ebd078B4283924c8A8A7Ed91E7a6CC0CC",
+    "keeper": "0x3a83a80B9249EcA85A9540Ec878bD968F13CB676",
+    "rescue": "0x3a83a80B9249EcA85A9540Ec878bD968F13CB676",
+    "poolManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+    "universalRouter": "0x3A9D48AB9751398BbFa63ad67599Bb04e4BdF98b",
+    "quoter": "0x61B3f2011A92d183C7dbaDBdA940a7555Ccf9227",
+    "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+    "chainlinkEthUsd": "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+    "squeekCore": "0xfd6c166d4b8e2962e65746a13e5a0797cd4de0c4",
+    "stateView": "0xE1Dd9c3fA50EDB962E442f60DfBc432e24537E4C",
+    "ballot": "0xDD71B58eD927f1BE5Fd1Ca8cD96757182db93a75",
+    "airdrop": "0x0fC91d7436c4F402543d78f316EA05e929695205"
+  },
+  "pool": {
+    "fee": 0,
+    "tickSpacing": 60
+  },
+  "deployBlock": 12082695,
+  "economics": {
+    "feeBps": 500,
+    "monthlyAllowanceUsd": 1000,
+    "payoutIntervalSeconds": 604800
+  },
+  "burn": {
+    "burnAddress": "0x000000000000000000000000000000000000dEaD",
+    "minEthToBurn": 0.005,
+    "maxSlippageBps": 300
+  }
+}

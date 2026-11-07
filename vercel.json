@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci --prefix backend && npm ci --prefix frontend",
+  "buildCommand": "npm run build --prefix frontend",
+  "outputDirectory": "frontend/dist/client",
+  "functions": {
+    "api/index.js": { "maxDuration": 30, "includeFiles": "backend/{config,data}/**" }
+  },
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.caretoshi.live" }],
+      "destination": "https://caretoshi.live/$1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index" }],
+  "headers": [
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}
